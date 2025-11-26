@@ -15,10 +15,10 @@ export default function OurServices() {
       title: "Manpower Recruitment & Training",
       image: "services1.png",
       items: [
-        "Workforce Mapping & Planning",
-        "Recruitment & Selection Support",
-        "Training & Capacity Building",
-        "Staffing for Administrators, Nursing & Paramedical"
+        "Workforce need assessment",
+        "Job descriptions & competency mapping",
+        "Screening and shortlisting of qualified candidates",
+        "Recruitment for nursing, clinical, paramedical & administrative roles"
       ]
     },
     {
@@ -34,7 +34,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="bg-slate-100  mt-22.5 sm:mt-25">
+    <section className="bg-slate-100 py-12 sm:py-16 lg:py-24 px-6 lg:px-8 ">
       <div className="max-w-7xl py-6 mx-auto">
         {/* Section Title */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 text-center mb-12 lg:mb-16">

@@ -6,13 +6,14 @@ const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   { label: 'About us', href: '/about' },
   { label: 'Our Services', href: '/services' },
+  { label: 'Testimonials', href: '/testimonial' },
 ];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 font-poppins start-0 border-b border-default">
+    <nav className="bg-white sticky w-full z-20 top-0 font-poppins start-0 border-b border-default">
       <div className="flex flex-wrap items-center justify-between mx-auto px-1 sm:px-4 sm:py-1.25">
         {/* Hamburger Menu Button (now on the left side) */}
         <div className="md:hidden absolute right-4">
@@ -48,20 +49,19 @@ const Navbar = () => {
         {/* Contact Button */}
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button type="button" className="text-black bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">
-            <Link href="/contact" className="hidden  ml-4 text-xl sm:inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-teal-600 transition">
+            <Link href="/contact" className="hidden  ml-4 text-xl md:inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-teal-600 transition">
               Contact
             </Link>
           </button>
         </div>
       </div>
 
-      
+
 
       {/* Slide-in Menu for Mobile */}
       <div
-        className={`fixed top-0 right-0 z-50 w-64 bg-white text-[#333333] shadow-lg h-full transform transition-transform duration-300 ease-in-out ${
-          mobileOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed top-0 right-0 z-50 w-64 bg-white text-[#333333] shadow-lg h-full transform transition-transform duration-300 ease-in-out ${mobileOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex justify-end p-4">
           <button onClick={() => setMobileOpen(false)} aria-label="Close menu">

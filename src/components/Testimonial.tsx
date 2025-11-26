@@ -1,0 +1,100 @@
+"use client";
+
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from 'swiper/modules';
+
+const Testimonial = () => {
+  // Data for the testimonials (certificates/recommendations as images)
+  const testimonials = [
+    {
+      image: 'testimonial.png', // Replace with your actual image paths
+      alt: 'Certificate 1',
+    },
+    {
+      image: 'testimonial1.png', // Replace with your actual image paths
+      alt: 'Certificate 2',
+    },
+    {
+      image: 'testimonial2.png', // Replace with your actual image paths
+      alt: 'Certificate 3',
+    },
+    {
+      image: 'testimonial3.png', // Replace with your actual image paths
+      alt: 'Certificate 4',
+    },
+     {
+      image: 'testimonial4.png', // Replace with your actual image paths
+      alt: 'Certificate 5',
+    },
+  ];
+
+  return (
+    <div className="mx-auto py-10 px-6 lg:px-40 text-center">
+      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#043C64] mb-8">
+        <span className="border-b-4 border-slate-800 pb-2">Testimonials</span>
+      </h3>
+      <p className="text-lg sm:text-4xl text-[#4A4A4A] mb-4">
+        See What Our Clients Have to Say
+      </p>
+      <p className="text-md sm:text-lg text-[#555555] mb-16">
+        “Verified and trusted certificates and recommendations”
+      </p>
+
+      {/* Swiper for Mobile and Desktop */}
+      <div className="block lg:hidden">
+        {/* Mobile: Swiper */}
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop={true}
+        >
+          {testimonials.map((testimonial, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <div className="w-full overflow-hidden">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.alt}
+                    className="w-full h-full object-contain" // Ensure full image visibility without cropping
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div className="hidden lg:block">
+        {/* Desktop: Swiper */}
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop={true}
+        >
+          {testimonials.map((testimonial, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden max-w-md mx-auto">
+                <div className="w-full overflow-hidden">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.alt}
+                    className="w-full h-full object-contain" // Ensure full image visibility without cropping
+                  />
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  );
+};
+
+export default Testimonial;

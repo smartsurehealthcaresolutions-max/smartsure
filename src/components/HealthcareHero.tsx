@@ -1,6 +1,6 @@
 export default function HealthcareHero() {
     return (
-        <section className="relative sm:mt-25 bg-white overflow-hidden">
+        <section className="relative bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto ">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     {/* Left Content */}
@@ -16,7 +16,7 @@ export default function HealthcareHero() {
                             Helping healthcare organizations achieve sustainable excellence.
                         </p>
 
-                        <div className="flex flex-col text-xl sm:flex-row gap-4 justify-center lg:justify-start">
+                        <div className="flex flex-col m-4 text-xl sm:flex-row gap-4 justify-center lg:justify-start">
                             <button className="bg-[#43BEF6] hover:bg-[#36a3db] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
                                 Our Services
                             </button>
@@ -28,9 +28,7 @@ export default function HealthcareHero() {
 
                     {/* Right Image Section */}
                     <div className="relative order-1 lg:order-2">
-                        {/* Background shape */}
-                        <div className="absolute inset-0 -translate-y-30 translate-x-8 bg-linear-to-br from-sky-300 to-sky-400 rounded-full w-[500px] h-[500px] lg:w-[1100px] lg:h-[1100px] lg:-translate-y-84"></div>
-
+                        
                         {/* Doctor Image Placeholder */}
                         <div className="relative z-10 flex justify-center lg:justify-end">
                             <div className="w-full">

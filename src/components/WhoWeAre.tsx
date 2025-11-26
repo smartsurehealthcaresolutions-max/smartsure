@@ -1,8 +1,8 @@
 import { ShieldCheck, Users, Star } from 'lucide-react';
 export default function WhoWeAre() {
     return (
-        <section className="bg-[#f8fbfd] mt-22.5 sm:mt-25">
-            <div className="max-w-7xl py-6 mx-auto">
+        <section className="bg-[#f8fbfd] py-12 sm:py-16 lg:py-24 px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
                 {/* Section Title */}
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#043C64] text-center mb-12 lg:mb-16">
                     <span className="border-b-4 border-[#043C64] pb-2">Who We Are</span>
