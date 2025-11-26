@@ -1,7 +1,7 @@
 import { ShieldCheck, Users, Star } from 'lucide-react';
 export default function WhoWeAre() {
     return (
-        <section className="bg-[#f8fbfd] py-12 sm:py-16 lg:py-24 px-6 lg:px-8">
+        <section className="bg-[#f8fbfd] px-6 py-10 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Section Title */}
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#043C64] text-center mb-12 lg:mb-16">
@@ -13,7 +13,7 @@ export default function WhoWeAre() {
                     <div className="order-2 lg:order-1">
                         <div className="w-full  max-w-4xl">
                             <img
-                                src="/abouts.png"
+                                src="/images/abouts.png"
                                 alt="Healthcare team collaboration"
                                 className="w-full h-full object-cover  "
                             />

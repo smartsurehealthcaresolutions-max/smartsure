@@ -10,32 +10,33 @@ const Testimonial = () => {
   // Data for the testimonials (certificates/recommendations as images)
   const testimonials = [
     {
-      image: 'testimonial.png', // Replace with your actual image paths
+      image: '/images/testimonial.png', // Replace with your actual image paths
       alt: 'Certificate 1',
     },
     {
-      image: 'testimonial1.png', // Replace with your actual image paths
+      image: '/images/testimonial1.png', // Replace with your actual image paths
       alt: 'Certificate 2',
     },
     {
-      image: 'testimonial2.png', // Replace with your actual image paths
+      image: '/images/testimonial2.png', // Replace with your actual image paths
       alt: 'Certificate 3',
     },
     {
-      image: 'testimonial3.png', // Replace with your actual image paths
+      image: '/images/testimonial3.png', // Replace with your actual image paths
       alt: 'Certificate 4',
     },
      {
-      image: 'testimonial4.png', // Replace with your actual image paths
+      image: '/images/testimonial4.png', // Replace with your actual image paths
       alt: 'Certificate 5',
     },
   ];
 
   return (
-    <div className="mx-auto py-10 px-6 lg:px-40 text-center">
-      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#043C64] mb-8">
-        <span className="border-b-4 border-slate-800 pb-2">Testimonials</span>
-      </h3>
+    <section className="bg-slate-100 py-10 px-6 lg:px-8 ">
+    <div className="max-w-7xl mx-auto text-center">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 text-center mb-10">
+          <span className="border-b-4 border-slate-800 pb-2">Testimonials</span>
+        </h2>
       <p className="text-lg sm:text-4xl text-[#4A4A4A] mb-4">
         See What Our Clients Have to Say
       </p>
@@ -94,6 +95,7 @@ const Testimonial = () => {
         </Swiper>
       </div>
     </div>
+    </section>
   );
 };
 

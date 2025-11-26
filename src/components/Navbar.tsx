@@ -26,7 +26,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link href="/" passHref className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/logo.png" alt="SmartSure Logo" height={90} width={90} />
+          <img src="/images/logo.png" alt="SmartSure Logo" height={90} width={90} />
           <div className="leading-tight">
             <p className="text-[#043B5C] text-2xl">SmartSure</p>
             <p className="text-[12px] text-[#475467] -mt-1">Healthcare Solutions</p>
@@ -49,7 +49,7 @@ const Navbar = () => {
         {/* Contact Button */}
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button type="button" className="text-black bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">
-            <Link href="/contact" className="hidden  ml-4 text-xl md:inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-teal-600 transition">
+            <Link href="/contact" className="hidden  ml-4 text-xl md:inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-white hover:text-[#222222] hover:border-black hover:border transition">
               Contact
             </Link>
           </button>

@@ -68,7 +68,7 @@ export default function OurImpact() {
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md">
               <img 
-                src="map.png" 
+                src="images/map.png" 
                 alt="India map showing SmartSure's impact across states" 
                 className="w-full h-auto object-contain"
               />

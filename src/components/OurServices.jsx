@@ -2,7 +2,7 @@ export default function OurServices() {
   const services = [
     {
       title: "Quality Accreditation support",
-      image: "services.png",
+      image: "/images/services.png",
       items: [
         "Gap Analysis & Readiness Assessment",
         "SOP & Manual Development",
@@ -13,7 +13,7 @@ export default function OurServices() {
     },
     {
       title: "Manpower Recruitment & Training",
-      image: "services1.png",
+      image: "/images/services1.png",
       items: [
         "Workforce need assessment",
         "Job descriptions & competency mapping",
@@ -23,7 +23,7 @@ export default function OurServices() {
     },
     {
       title: "Digital Marketing",
-      image: "services2.png",
+      image: "/images/services2.png",
       items: [
         "Website & Social Media Management",
         "SEO & Google Ads Campaigns",
@@ -34,8 +34,8 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="bg-slate-100 py-12 sm:py-16 lg:py-24 px-6 lg:px-8 ">
-      <div className="max-w-7xl py-6 mx-auto">
+    <section className="bg-slate-100 py-10 px-6 lg:px-8 ">
+      <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 text-center mb-12 lg:mb-16">
           <span className="border-b-4 border-slate-800 pb-2">Our Services</span>

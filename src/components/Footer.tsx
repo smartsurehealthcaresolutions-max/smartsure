@@ -2,12 +2,10 @@ import { MapPin, Mail } from 'lucide-react';
 
 export default function Footer() {
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Our Services', href: '#services' },
-    { name: 'How We Work', href: '#how-we-work' },
-    { name: 'Career', href: '#career' },
-    { name: 'Contact Us', href: '#contact' }
+    { label: 'Home', href: '/' },
+    { label: 'About us', href: '/about' },
+    { label: 'Our Services', href: '/services' },
+    { label: 'Testimonials', href: '/testimonial' },
   ];
 
   return (
@@ -19,37 +17,37 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 flex items-center justify-center">
-                <img src="/logo.png" alt="SmartSure Logo" height={70} width={70} />
+                <img src="/images/logo.png" alt="SmartSure Logo" height={70} width={70} />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-slate-800">SmartSure</h3>
                 <p className="text-sm text-slate-600">Healthcare Solutions</p>
               </div>
             </div>
-            
+
             {/* Tagline */}
             <p className="text-slate-600 text-sm leading-relaxed">
               "Empowering hospitals to deliver care with quality, compassion, and confidence."
             </p>
           </div>
-          
+
           {/* Middle Column - Quick Links */}
           <div>
             <h4 className="text-lg font-bold text-slate-800 mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
+                  <a
                     href={link.href}
                     className="text-slate-600 hover:text-sky-500 transition-colors duration-200 text-sm"
                   >
-                    {link.name}
+                    {link.label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          
+
           {/* Right Column - Contact Info */}
           <div className="space-y-4">
             {/* Location */}
@@ -62,11 +60,11 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            
+
             {/* Email */}
             <div className="flex items-start gap-3">
               <Mail className="text-sky-500 shrink-0 mt-1" size={20} />
-              <a 
+              <a
                 href="mailto:info@smartsurehealthcaresolution.com"
                 className="text-sm text-slate-600 hover:text-sky-500 transition-colors duration-200 break-all"
               >
@@ -75,7 +73,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         {/* Copyright */}
         <div>
           <p className="text-center text-sm text-slate-500">
