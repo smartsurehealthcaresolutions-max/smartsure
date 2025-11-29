@@ -7,7 +7,7 @@ import { useWindowSize } from '@react-hook/window-size';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const EMAIL = 'anujsingh.devx@gmail.com';
+const EMAIL = process.env.NEXT_PUBLIC_EMAIL;
 
 const Query = () => {
     const [form, setForm] = useState({ name: '', email: '', message: '', company: '' });
@@ -23,6 +23,11 @@ const Query = () => {
     };
 
     const handleCopy = async () => {
+        if (!EMAIL) {
+            toast.info('Email address is not available.');
+            return;
+        }
+
         try {
             await navigator.clipboard.writeText(EMAIL);
             toast.success('Email copied!');

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HealthcareHero() {
     return (
         <section className="relative bg-white overflow-hidden">
@@ -17,12 +19,12 @@ export default function HealthcareHero() {
                         </p>
 
                         <div className="flex flex-col m-4 text-xl sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button className="bg-[#43BEF6] hover:bg-[#36a3db] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+                            <Link href="/services" className="bg-[#43BEF6] hover:bg-[#36a3db] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
                                 Our Services
-                            </button>
-                            <button className="bg-white hover:bg-slate-50 text-slate-700 font-semibold px-8 py-3 rounded-lg border-2 border-slate-300 transition-colors duration-200">
+                            </Link>
+                            <Link href="/contact" className="bg-white hover:bg-slate-50 text-slate-700 font-semibold px-8 py-3 rounded-lg border-2 border-slate-300 transition-colors duration-200">
                                 Contact us
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
