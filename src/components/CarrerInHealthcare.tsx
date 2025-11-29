@@ -6,7 +6,7 @@ export default function CareerInHealthcare() {
       <div className="max-w-7xl py-6 mx-auto">
         {/* Section Title */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 text-center mb-12 lg:mb-16">
-          <span className="border-b-4 border-slate-800 pb-2">Contact Us</span>
+          <span className=" pb-2">Are you looking for a job ?</span>
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">

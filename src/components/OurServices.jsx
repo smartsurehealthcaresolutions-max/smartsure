@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export default function OurServices() {
   const services = [
     {
@@ -8,18 +10,33 @@ export default function OurServices() {
         "SOP & Manual Development",
         "Training & Internal Audits",
         "Registration & Non-compliance Closure",
-        "Post-accreditation Support"
-      ]
+        "Post-accreditation Support",
+      ],
+      secondtitle:"",
+      seconditems:[],
     },
     {
-      title: "Manpower Recruitment & Training",
+      title: "Manpower Recruitment",
       image: "/images/services1.png",
       items: [
         "Workforce need assessment",
         "Job descriptions & competency mapping",
         "Screening and shortlisting of qualified candidates",
         "Recruitment for nursing, clinical, paramedical & administrative roles"
-      ]
+      ],
+      secondtitle:"Training & Capacity Building",
+      description:"We deliver practical, role-specific, and NABH-aligned training modules conducted by experienced healthcare professionals and certified trainers.",
+      seconditems:["Patient Communication & Customer Service",
+        "Nursing Skills & Clinical Protocols",
+        "Infection Prevention & Control (IPC)",
+        "Life Support Programs: BLS, ACLS, NALS, PALS",
+        "Patient Counseling Techniques",
+        "Emergency Response & Code Blue/Red Protocols",
+        "Department-wise Trainings: ICU, OT, OPD, Pharmacy, Front Office",
+        "Soft Skills & Behavioural Training",
+        "Leadership Programs for Supervisors & In-charges",
+        "POSH Training by Industry-Certified Trainers",
+      ],
     },
     {
       title: "Digital Marketing",
@@ -29,7 +46,9 @@ export default function OurServices() {
         "SEO & Google Ads Campaigns",
         "Online Reputation Management",
         "Patient Engagement Campaigns"
-      ]
+      ],
+      secondtitle:"",
+      seconditems:[],
     }
   ];
 
@@ -71,7 +90,21 @@ export default function OurServices() {
                     >
                       <span className="text-sky-400 mr-2 mt-1 shrink-0">●</span>
                       <span>{item}</span>
-                    </li>
+                    </li>                    
+                  ))}
+                </ul>
+                <h3 className="text-xl sm:text-2xl pt-2 font-bold text-slate-800 mb-4">
+                  {service.secondtitle}
+                </h3>
+                <ul className="space-y-3">
+                  {service.seconditems.map((item, itemIndex) => (
+                    <li 
+                      key={itemIndex}
+                      className="flex items-start text-slate-600 text-sm sm:text-base"
+                    >
+                      <span className="text-sky-400 mr-2 mt-1 shrink-0">●</span>
+                      <span>{service.seconditems[itemIndex]}</span>
+                    </li>                    
                   ))}
                 </ul>
               </div>
