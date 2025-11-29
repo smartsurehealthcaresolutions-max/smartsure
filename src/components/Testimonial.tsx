@@ -7,26 +7,26 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 
 const Testimonial = () => {
-  // Data for the testimonials (certificates/recommendations as images)
+
   const testimonials = [
     {
-      image: '/images/testimonial.png', // Replace with your actual image paths
+      image: '/images/testimonial.webp',
       alt: 'Certificate 1',
     },
     {
-      image: '/images/testimonial1.png', // Replace with your actual image paths
+      image: '/images/testimonial1.webp', 
       alt: 'Certificate 2',
     },
     {
-      image: '/images/testimonial2.png', // Replace with your actual image paths
+      image: '/images/testimonial2.webp', 
       alt: 'Certificate 3',
     },
     {
-      image: '/images/testimonial3.png', // Replace with your actual image paths
+      image: '/images/testimonial3.webp', 
       alt: 'Certificate 4',
     },
      {
-      image: '/images/testimonial4.png', // Replace with your actual image paths
+      image: '/images/testimonial4.webp', 
       alt: 'Certificate 5',
     },
   ];
