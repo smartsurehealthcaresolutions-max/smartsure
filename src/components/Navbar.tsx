@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-white sticky w-full z-20 top-0 font-poppins start-0 border-b border-default">
       <div className="flex flex-wrap items-center justify-between mx-auto px-1 sm:px-4 sm:py-1.25">
         {/* Hamburger Menu Button (now on the left side) */}
-        <div className="md:hidden absolute right-4">
+        <div className="lg:hidden absolute right-4">
           <button onClick={() => setMobileOpen(true)} className="text-black">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -49,7 +49,7 @@ const Navbar = () => {
         {/* Contact Button */}
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button type="button" className="text-black bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">
-            <Link href="/contact" className="hidden  ml-4 text-xl md:inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-white hover:text-[#222222] hover:border-black hover:border transition">
+            <Link href="/contact" className="hidden  ml-4 text-xl lg:inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-white hover:text-[#222222] hover:border-black hover:border transition">
               Contact
             </Link>
           </button>
