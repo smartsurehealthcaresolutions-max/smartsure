@@ -14,7 +14,7 @@ export default function CareerInHealthcare() {
           <div className="order-2 lg:order-1">
             <div className="w-full max-w-4xl">
               <img 
-                src="images/carrer.png" 
+                src="images/carrer.webp" 
                 alt="Healthcare professionals team" 
                 className="w-full h-full object-cover"
               />

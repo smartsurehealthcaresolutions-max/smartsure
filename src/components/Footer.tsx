@@ -17,7 +17,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 flex items-center justify-center">
-                <img src="/images/logo.png" alt="SmartSure Logo" height={70} width={70} />
+                <img src="/images/logo.webp" alt="SmartSure Logo" height={70} width={70} />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-slate-800">SmartSure</h3>

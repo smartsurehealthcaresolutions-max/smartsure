@@ -4,7 +4,7 @@ export default function OurServices() {
   const services = [
     {
       title: "Quality Accreditation support",
-      image: "/images/services.png",
+      image: "/images/services.webp",
       items: [
         "Gap Analysis & Readiness Assessment",
         "SOP & Manual Development",
@@ -17,7 +17,7 @@ export default function OurServices() {
     },
     {
       title: "Manpower Recruitment",
-      image: "/images/services1.png",
+      image: "/images/services1.webp",
       items: [
         "Workforce need assessment",
         "Job descriptions & competency mapping",
@@ -40,7 +40,7 @@ export default function OurServices() {
     },
     {
       title: "Digital Marketing",
-      image: "/images/services2.png",
+      image: "/images/services2.webp",
       items: [
         "Website & Social Media Management",
         "SEO & Google Ads Campaigns",

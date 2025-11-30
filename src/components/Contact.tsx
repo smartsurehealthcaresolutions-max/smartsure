@@ -188,7 +188,7 @@ const Contact: React.FC = () => {
                 type="file"
                 name="file"
                 id="file"
-                accept=".pdf,.docx,.txt,.jpg,.png,.jpeg"
+                accept=".pdf,.docx,.txt,.jpg,.webp,.jpeg"
                 onChange={handleChange}
                 className="w-full p-4 rounded bg-[#ffffff] border border-[#d9d9d9] text-black focus:outline-none focus:border-black transition-all"
               />

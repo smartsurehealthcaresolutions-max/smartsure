@@ -13,7 +13,7 @@ export default function WhoWeAre() {
                     <div className="order-2 lg:order-1">
                         <div className="w-full  max-w-4xl">
                             <img
-                                src="/images/abouts.png"
+                                src="/images/abouts.webp"
                                 alt="Healthcare team collaboration"
                                 className="w-full h-full object-cover  "
                             />

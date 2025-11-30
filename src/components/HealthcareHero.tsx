@@ -35,7 +35,7 @@ export default function HealthcareHero() {
                         <div className="relative z-10 flex justify-center lg:justify-end">
                             <div className="w-full">
                                 <img
-                                    src="/images/mainimage.png"
+                                    src="/images/mainimage.webp"
                                     alt="Healthcare professional"
                                     className="w-full h-auto object-cover"
                                 />

@@ -10,35 +10,35 @@ const OurExpertise = () => {
   // Data for each expertise section
   const expertiseData = [
     {
-      image: "/images/expertise.png", // Replace with your image paths
+      image: "/images/expertise.webp", // Replace with your image paths
       title: "Quality Accreditation & Certification",
     },
     {
-      image: "/images/expertise1.png", // Replace with your image paths
+      image: "/images/expertise1.webp", // Replace with your image paths
       title: "System & Process Development",
     },
     {
-      image: "/images/expertise2.png", // Replace with your image paths
+      image: "/images/expertise2.webp", // Replace with your image paths
       title: "Patient Experience & Communication",
     },
     {
-      image: "/images/expertise3.png", // Replace with your image paths
+      image: "/images/expertise3.webp", // Replace with your image paths
       title: "Hospital Planning & Designing",
     },
     {
-        image: "/images/expertise4.png", // Replace with your image paths
+        image: "/images/expertise4.webp", // Replace with your image paths
         title: "Equipment Planning & Procurement",
     },
     {
-        image: "/images/expertise5.png", // Replace with your image paths
+        image: "/images/expertise5.webp", // Replace with your image paths
         title: "OT Designing & Restructuring",
     },
     {
-      image: "/images/expertise6.png", // Replace with your image paths
+      image: "/images/expertise6.webp", // Replace with your image paths
       title: "Training & Capacity Building",
     },
     {
-      image: "/images/expertise7.png", // Replace with your image paths
+      image: "/images/expertise7.webp", // Replace with your image paths
       title: "Digital Marketing & Online Positioning",
     },
   ];

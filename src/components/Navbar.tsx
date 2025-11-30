@@ -26,7 +26,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link href="/" passHref className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/images/logo.png" alt="SmartSure Logo" height={90} width={90} />
+          <img src="/images/logo.webp" alt="SmartSure Logo" height={90} width={90} />
           <div className="leading-tight">
             <p className="text-[#043B5C] text-2xl">SmartSure</p>
             <p className="text-[12px] text-[#475467] -mt-1">Healthcare Solutions</p>
