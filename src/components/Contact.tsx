@@ -110,7 +110,6 @@ const Contact: React.FC = () => {
   return (
     <section
       className="bg-[#f8fbfd] text-[#043C64] pb-10 px-6 sm:px-10 md:px-20 relative overflow-hidden"
-      id="contact"
       aria-labelledby="contact-heading"
     >
       {submitted && (
