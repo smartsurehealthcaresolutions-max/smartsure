@@ -35,11 +35,11 @@ const OurExpertise = () => {
     },
     {
       image: "/images/expertise6.webp", // Replace with your image paths
-      title: "Training & Capacity Building",
+      title: "Digital Marketing & Online Positioning",
     },
     {
       image: "/images/expertise7.webp", // Replace with your image paths
-      title: "Digital Marketing & Online Positioning",
+      title: "Training & Capacity Building",
     },
   ];
 
@@ -106,7 +106,7 @@ const OurExpertise = () => {
 
             {/* Service Content */}
             <div className="p-6 grow">
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-800 mb-4">
                 {item.title}
               </h3>
             </div>

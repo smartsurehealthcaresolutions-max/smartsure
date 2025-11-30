@@ -91,7 +91,7 @@ const Query = () => {
 
     return (
         <section
-            className="bg-[#f8fbfd] text-[#043C64] pb-10 px-6 sm:px-10 md:px-20 relative overflow-hidden"
+            className="bg-[#f8fbfd] text-[#043C64]  py-12 sm:py-16 lg:py-24 px-6 lg:px-8 relative overflow-hidden"
             id="contact"
             aria-labelledby="contact-heading"
         >

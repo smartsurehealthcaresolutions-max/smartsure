@@ -57,7 +57,7 @@ export default function OurServices() {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 text-center mb-12 lg:mb-16">
-          <span className="border-b-4 border-slate-800 pb-2">Our Services</span>
+          <span className="border-b-4 border-slate-800 mb-2">Our Services</span>
         </h2>
         
         {/* Services Grid */}

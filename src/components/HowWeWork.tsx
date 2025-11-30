@@ -28,8 +28,8 @@ export default function HowWeWork() {
     <section className="bg-gray-50 py-12 sm:py-16 lg:py-24 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 text-center mb-6">
-          <span className="border-b-4 border-slate-800 pb-2">How We Work</span>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 text-center mb-6">
+          <span className="border-b-4 border-slate-800 mb-2">How We Work</span>
         </h2>
         
         {/* Subtitle */}
@@ -38,15 +38,7 @@ export default function HowWeWork() {
         </p>
         
         {/* Steps Grid */}
-        <div className="relative">
-          {/* Desktop Arrow Lines */}
-          <div className="hidden lg:flex absolute top-1/3 left-0 right-0 items-center justify-between px-12 pointer-events-none">
-            <div className="flex-1 flex items-center justify-around">
-              <ArrowRight className="text-gray-300" size={32} />
-              <ArrowRight className="text-gray-300" size={32} />
-              <ArrowRight className="text-gray-300" size={32} />
-            </div>
-          </div>
+        <div className="relative">          
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 relative">
             {steps.map((step, index) => {

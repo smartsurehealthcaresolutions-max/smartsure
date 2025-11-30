@@ -35,7 +35,7 @@ const Testimonial = () => {
     <section className="bg-slate-100 py-10 px-6 lg:px-8 ">
     <div className="max-w-7xl mx-auto text-center">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 text-center mb-10">
-          <span className="border-b-4 border-slate-800 pb-2">Testimonials</span>
+          <span className="border-b-4 border-slate-800 mb-2">Testimonials</span>
         </h2>
       <p className="text-lg sm:text-4xl text-[#4A4A4A] mb-4">
         See What Our Clients Have to Say

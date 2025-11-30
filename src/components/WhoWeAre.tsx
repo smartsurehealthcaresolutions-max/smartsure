@@ -3,10 +3,6 @@ export default function WhoWeAre() {
     return (
         <section className="bg-[#f8fbfd] px-6 py-10 lg:px-8">
             <div className="max-w-7xl mx-auto">
-                {/* Section Title */}
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#043C64] text-center mb-12 lg:mb-16">
-                    <span className="border-b-4 border-[#043C64] pb-2">Who We Are</span>
-                </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     {/* Left Image Section */}
