@@ -202,19 +202,6 @@ const Contact: React.FC = () => {
             >
               {submitting ? 'Sending…' : 'Send Resume'}
             </button>
-            <div className="w-full text-[#666] font-medium not-italic text-lg mb-4">
-              For more info, reach us at
-            </div>
-            <div className="w-full text-left font-bold text-lg">
-              <address className="not-italic">
-                <span className="block mb-2">
-                  Branch Office: <span className="font-normal">10 C Madhuban, Udaipur, Rajasthan, 313001</span>
-                </span>
-                <span>
-                  Mobile Number: <span className="font-normal">+91 - 8199944180</span>
-                </span>
-              </address>
-            </div>
           </form>
         )}
 

@@ -115,7 +115,7 @@ export async function POST(req: Request) {
       
       <!-- Header with logo -->
       <div style="background-color: #3498db; padding: 25px; text-align: center;">
-        <img src="https://smartsure-nu.vercel.app/images/logo.png" alt="SmartSecure Logo" style="max-width: 250px; height: auto;">
+        <img src="https://smartsure-nu.vercel.app/images/logo.webp" alt="SmartSecure Logo" style="max-width: 250px; height: auto;">
       </div>
       
       <!-- Main Content -->
@@ -171,7 +171,7 @@ export async function POST(req: Request) {
         
         <!-- Header with logo -->
         <div style="background-color: #3498db; padding: 20px; text-align: center;">
-          <img src="https://smartsure-nu.vercel.app/images/logo.png" alt="SmartSecure Logo" style="max-width: 200px; height: auto;">
+          <img src="https://smartsure-nu.vercel.app/images/logo.webp" alt="SmartSecure Logo" style="max-width: 200px; height: auto;">
         </div>
         
         <!-- Main Content -->

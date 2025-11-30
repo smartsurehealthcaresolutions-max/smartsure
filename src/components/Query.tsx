@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const EMAIL = process.env.NEXT_PUBLIC_EMAIL;
 
 const Query = () => {
-    const [form, setForm] = useState({ name: '', email: '', message: '', company: '' });
+    const [form, setForm] = useState({ name: '', email: '', message: '', company: '', contact: '' });
     const [submitted, setSubmitted] = useState(false);
     const [submitting, setSubmitting] = useState(false);
     const [width, height] = useWindowSize();
@@ -45,14 +45,20 @@ const Query = () => {
         }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phoneRegex = /^[0-9]{10,12}$/;
         if (!emailRegex.test(form.email.trim())) {
             toast.error('Please enter a valid email address.');
             return;
         }
 
+        if (form.contact?.trim() && !phoneRegex.test(form.contact.trim())) {
+            toast.error('Please enter a valid 10 to 12 digit phone number.');
+            return;
+        }
+
         if (form.company?.trim()) {
             setSubmitted(true);
-            setForm({ name: '', email: '', message: '', company: '' });
+            setForm({ name: '', email: '', message: '', company: '', contact: '' });
             toast.success('🎉 Your message has been sent!');
             return;
         }
@@ -66,6 +72,7 @@ const Query = () => {
                     name: form.name.trim(),
                     email: form.email.trim(),
                     query: form.message.trim(),
+                    contact: form.contact.trim(),
                 }),
             });
 
@@ -80,7 +87,7 @@ const Query = () => {
 
             setSubmitted(true);
             toast.success('🎉 Your message has been sent!');
-            setForm({ name: '', email: '', message: '', company: '' });
+            setForm({ name: '', email: '', message: '', company: '', contact: '' });
         } catch (err) {
             if (err instanceof Error) toast.error(err.message || 'Something went wrong.');
             else toast.error('Something went wrong.');
@@ -98,10 +105,11 @@ const Query = () => {
             {submitted && (
                 <Confetti width={width} height={height} recycle={false} numberOfPieces={150} />
             )}
-
-           
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 text-center mb-12 lg:mb-16">
+                <span className="border-b-4 border-slate-800 mb-2">Contact Us</span>
+            </h2>
             <p className="text-lg text-center sm:text-2xl text-[#4A4A4A] mb-4">
-                Send Us a Message
+                Send Us Query
             </p>
             <div className="max-w-xl mx-auto shadow-lg bg-white p-8 rounded-lg">
 
@@ -129,7 +137,7 @@ const Query = () => {
                             />
                         </div>
 
-                        {(['name', 'email'] as const).map((field) => (
+                        {(['name', 'email', 'contact'] as const).map((field) => (
                             <div key={field} className="relative w-full">
                                 <label
                                     htmlFor={field}
@@ -158,7 +166,7 @@ const Query = () => {
                                 htmlFor="message"
                                 className={`absolute left-4 top-4 pointer-events-none font-medium select-none transition-all ${form.message.length > 0 ? 'scale-75 -translate-y-7 text-[#ccc]' : 'text-[#ccc]'} `}
                             >
-                                Message
+                                Query
                             </label>
 
                             <textarea
@@ -183,6 +191,19 @@ const Query = () => {
                         >
                             {submitting ? 'Sending…' : 'Send Message'}
                         </button>
+                        <div className="w-full text-[#666] font-medium not-italic text-lg mb-4">
+                            For more info, reach us at
+                        </div>
+                        <div className="w-full text-left font-bold text-lg">
+                            <address className="not-italic">
+                                <span className="block mb-2">
+                                    Branch Office: <span className="font-normal">10 C Madhuban, Udaipur, Rajasthan, 313001</span>
+                                </span>
+                                <span>
+                                    Mobile Number: <span className="font-normal">+91 - 8199944180</span>
+                                </span>
+                            </address>
+                        </div>
                     </form>
                 )}
 
