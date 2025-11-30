@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Confetti from 'react-confetti';
 import { useWindowSize } from '@react-hook/window-size';
 
-const EMAIL = process.env.NEXT_PUBLIC_EMAIL ;
+const EMAIL = process.env.NEXT_PUBLIC_EMAIL;
 
 type FormState = {
   name: string;
@@ -149,11 +149,10 @@ const Contact: React.FC = () => {
               <div key={field} className="relative w-full">
                 <label
                   htmlFor={field}
-                  className={`absolute left-4 top-4 pointer-events-none font-medium select-none transition-all ${
-                    form[field].length > 0
-                      ? 'scale-75 -translate-y-7 text-[#ccc]'
-                      : 'text-[#ccc]'
-                  }`}
+                  className={`absolute left-4 top-4 pointer-events-none font-medium select-none transition-all ${form[field].length > 0
+                    ? 'scale-75 -translate-y-7 text-[#ccc]'
+                    : 'text-[#ccc]'
+                    }`}
                 >
                   {field.charAt(0).toUpperCase() + field.slice(1)}
                 </label>
@@ -174,7 +173,7 @@ const Contact: React.FC = () => {
             ))}
 
             <div className="w-full text-[#666] font-medium">
-                Upload your resume 
+              Upload your resume
             </div>
 
             <div className="relative w-full">
@@ -182,7 +181,7 @@ const Contact: React.FC = () => {
                 htmlFor="file"
                 className="absolute left-4 top-4 pointer-events-none font-medium select-none transition-all text-[#ccc]"
               >
-                
+
               </label>
               <input
                 type="file"
@@ -197,13 +196,25 @@ const Contact: React.FC = () => {
             <button
               type="submit"
               disabled={submitting}
-              className={`bg-[#43bef6] mx-auto text-white hover:cursor-pointer px-8 py-3 rounded-full font-semibold shadow-lg focus:outline-none focus-visible:ring-4 transition-all ${
-                submitting ? 'opacity-70 cursor-not-allowed' : 'hover:scale-105'
-              }`}
+              className={`bg-[#43bef6] mx-auto text-white hover:cursor-pointer px-8 py-3 rounded-full font-semibold shadow-lg focus:outline-none focus-visible:ring-4 transition-all ${submitting ? 'opacity-70 cursor-not-allowed' : 'hover:scale-105'
+                }`}
               aria-label="Send Message"
             >
               {submitting ? 'Sending…' : 'Send Resume'}
             </button>
+            <div className="w-full text-[#666] font-medium not-italic text-lg mb-4">
+              For more info, reach us at
+            </div>
+            <div className="w-full text-left font-bold text-lg">
+              <address className="not-italic">
+                <span className="block mb-2">
+                  Branch Office: <span className="font-normal">10 C Madhuban, Udaipur, Rajasthan, 313001</span>
+                </span>
+                <span>
+                  Mobile Number: <span className="font-normal">+91 - 8199944180</span>
+                </span>
+              </address>
+            </div>
           </form>
         )}
 
