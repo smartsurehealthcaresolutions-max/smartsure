@@ -5,7 +5,7 @@ export default function Footer() {
     { label: 'Home', href: '/' },
     { label: 'About us', href: '/about' },
     { label: 'Our Services', href: '/services' },
-    { label: 'Testimonials', href: '/testimonial' },
+    { label: 'Submit your resume', href: '/carrer' },
   ];
 
   return (

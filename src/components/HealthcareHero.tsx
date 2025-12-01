@@ -22,7 +22,7 @@ export default function HealthcareHero() {
                             <Link href="/services" className="bg-[#43BEF6] hover:bg-[#36a3db] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
                                 Our Services
                             </Link>
-                            <Link href="/contact" className="bg-white hover:bg-slate-50 text-slate-700 font-semibold px-8 py-3 rounded-lg border-2 border-slate-300 transition-colors duration-200">
+                            <Link href="/#contact" className="bg-white hover:bg-slate-50 text-slate-700 font-semibold px-8 py-3 rounded-lg border-2 border-slate-300 transition-colors duration-200">
                                 Contact us
                             </Link>
                         </div>

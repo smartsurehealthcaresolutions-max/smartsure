@@ -6,7 +6,7 @@ const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   { label: 'About us', href: '/about' },
   { label: 'Our Services', href: '/services' },
-  { label: 'Testimonials', href: '/testimonial' },
+  { label: 'Submit Your Resume', href: '/carrer' },
 ];
 
 const Navbar = () => {
@@ -49,7 +49,7 @@ const Navbar = () => {
         {/* Contact Button */}
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button type="button" className="text-black bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">
-            <Link href="/contact" className="hidden  ml-4 text-xl lg:inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-white hover:text-[#222222] hover:border-black hover:border transition">
+            <Link href="/#contact" className="hidden  ml-4 text-xl lg:inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-white hover:text-[#222222] hover:border-black hover:border transition">
               Contact
             </Link>
           </button>
@@ -83,7 +83,7 @@ const Navbar = () => {
         {/* Move the Contact button to the bottom of the menu */}
         <div className="mt-auto p-6">
           <button type="button" className="text-black bg-brand hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">
-            <Link href="/contact" className="text-xl inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-teal-600 transition">
+            <Link href="/#contact" className="text-xl inline-block px-5 py-2 text-white bg-[#222222] rounded-full font-semibold hover:bg-teal-600 transition">
               Contact
             </Link>
           </button>
