@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HealthcareHero() {
@@ -30,14 +31,17 @@ export default function HealthcareHero() {
 
                     {/* Right Image Section */}
                     <div className="relative order-1 lg:order-2">
-                        
-                        {/* Doctor Image Placeholder */}
+
+                        {/* Image Placeholder */}
                         <div className="relative z-10 flex justify-center lg:justify-end">
                             <div className="w-full">
-                                <img
+                                <Image
                                     src="/images/mainimage.webp"
                                     alt="Healthcare professional"
                                     className="w-full h-auto object-cover"
+                                    width={656} 
+                                    height={659}
+                                    priority={true} 
                                 />
                             </div>
                         </div>
