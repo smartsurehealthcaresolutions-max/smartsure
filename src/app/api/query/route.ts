@@ -95,7 +95,7 @@ export async function POST(req: Request) {
         <div style="font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f7fc; padding: 40px; margin: 0; color: #333;">
           <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
             <div style="background-color: #3498db; padding: 20px; text-align: center;">
-              <img src="https://smartsure-nu.vercel.app/images/logo.webp" alt="SmartSecure Logo" style="max-width: 200px; height: auto;">
+              <img src="https://smartsurehealthcaresolutions.in/images/logo.webp" alt="SmartSecure Logo" style="max-width: 200px; height: auto;">
             </div>
             <div style="padding: 30px;">
               <h2 style="color: #2c3e50; font-size: 26px; font-weight: bold; margin-bottom: 20px;">New Query Submitted</h2>
@@ -123,7 +123,7 @@ export async function POST(req: Request) {
         <div style="font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f7fc; padding: 40px; margin: 0; color: #333;">
           <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
             <div style="background-color: #3498db; padding: 20px; text-align: center;">
-              <img src="https://smartsure-nu.vercel.app/images/logo.webp" alt="SmartSecure Logo" style="max-width: 200px; height: auto;">
+              <img src="https://smartsurehealthcaresolutions.in/images/logo.webp" alt="SmartSecure Logo" style="max-width: 200px; height: auto;">
             </div>
             <div style="padding: 30px;">
               <h2 style="color: #2c3e50; font-size: 26px; font-weight: bold; margin-bottom: 20px;">Thank you for your inquiry!</h2>

@@ -65,10 +65,10 @@ export default function Footer() {
             <div className="flex items-start gap-3">
               <Mail className="text-sky-500 shrink-0 mt-1" size={20} />
               <a
-                href="mailto:info@smartsurehealthcaresolution.com"
+                href="mailto:smartsurehealthcaresolutions@gmail.com"
                 className="text-sm text-slate-600 hover:text-sky-500 transition-colors duration-200 break-all"
               >
-                info@smartsurehealthcaresolution.com
+                smartsurehealthcaresolutions@gmail.com
               </a>
             </div>
           </div>

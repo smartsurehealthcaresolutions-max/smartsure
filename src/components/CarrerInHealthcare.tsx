@@ -49,7 +49,7 @@ export default function CareerInHealthcare() {
                   <Mail className="text-sky-500" size={20} />
                 </div>
                 <span className="text-base sm:text-lg font-medium">
-                  info@smartsurehealthcaresolution.com
+                  smartsurehealthcaresolutions@gmail.com
                 </span>
               </a>
             </div>
